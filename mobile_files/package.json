@@ -9,7 +9,7 @@
     "@babel/generator": "7.0.0-rc.2",
     "@babel/helper-builder-react-jsx": "7.0.0-rc.2",
     "@babel/plugin-transform-block-scoping": "7.0.0-rc.2",
-    "@babel/register": "7.0.0-rc.2",
+    "@babel/register": "7.7.0",
     "@tradle/react-native-http": "2.0.1",
     "assert": "1.4.1",
     "asyncstorage-down": "4.0.1",
