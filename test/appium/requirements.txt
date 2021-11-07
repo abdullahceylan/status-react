@@ -1,4 +1,4 @@
-aiohttp==2.2.3
+aiohttp==3.7.4
 allpairspy==2.3.0
 apipkg==1.4
 Appium-Python-Client==0.26
