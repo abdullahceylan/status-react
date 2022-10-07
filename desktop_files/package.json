@@ -4,7 +4,8 @@
   "private": true,
   "scripts": {
     "start": "node node_modules/react-native/local-cli/cli.js start",
-    "prepare": "patch-package"
+    "prepare": "npm run snyk-protect && patch-package",
+    "snyk-protect": "snyk-protect"
   },
   "desktopExternalModules": [
     "node_modules/react-native-i18n/desktop",
@@ -34,7 +35,7 @@
     "bignumber.js": "github:status-im/bignumber.js#master",
     "buffer": "3.6.0",
     "chance": "1.0.12",
-    "create-react-class": "15.6.2",
+    "create-react-class": "15.7.0",
     "dns.js": "1.0.1",
     "emojilib": "2.2.9",
     "eth-phishing-detect": "1.1.13",
@@ -45,15 +46,15 @@
     "instabug-reactnative": "2.12.0",
     "js-sha3": "^0.8.0",
     "level-filesystem": "1.2.0",
-    "metro": "^0.30.2",
+    "metro": "^0.67.0",
     "nfc-react-native": "github:status-im/nfc-react-native",
     "process": "0.11.10",
-    "prop-types": "15.6.0",
+    "prop-types": "15.6.2",
     "punycode": "1.4.1",
     "querystring-es3": "0.2.1",
     "re-natal": "git+https://github.com/status-im/re-natal.git#master",
-    "react": "16.3.1",
-    "react-dom": "16.3.1",
+    "react": "16.5.0",
+    "react-dom": "16.5.0",
     "react-native": "git+https://github.com/status-im/react-native-desktop.git",
     "react-native-background-timer": "2.0.0",
     "react-native-camera": "0.10.0",
@@ -84,12 +85,14 @@
     "string_decoder": "0.10.31",
     "text-encoding": "^0.6.4",
     "url": "0.10.3",
-    "web3": "github:status-im/web3.js#feature/shhext"
+    "web3": "github:status-im/web3.js#feature/shhext",
+    "@snyk/protect": "latest"
   },
   "devDependencies": {
     "patch-package": "^5.1.1"
   },
   "optionalDependencies": {
     "appdmg": "^0.5.2"
-  }
+  },
+  "snyk": true
 }
